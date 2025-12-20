@@ -124,4 +124,6 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for our 
 
 **License**: [MIT](LICENSE)
 
+🔒 **Security**: Please review our [Security Policy](SECURITY.md) before contributing.
+
 *This project is a technical portfolio submission for advanced AI security engineering and global talent endorsement.*
