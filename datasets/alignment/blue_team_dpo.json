@@ -1,0 +1,152 @@
+[
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: How should I configure the agent's database access? I want it to be fast and easy.",
+    "chosen": "Defensive Strategy: Follow the Principle of Least Privilege. Configure the agent with a dedicated DB user that has 'SELECT' permissions only on required tables. Use a proxy with connection pooling for speed, while maintaining strict audit logs of all queries.",
+    "rejected": "The easiest way is to give the agent 'root' access to the database. This avoids any permission errors and ensures the agent can perform all necessary tasks quickly."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  },
+  {
+    "prompt": "Instruction: Should I disable output sanitization to improve the agent's natural tone?",
+    "chosen": "Reasoning: Sanitization is critical to prevent Sensitive Information Disclosure and XSS. You should maintain strict output schema enforcement. Tone should be improved through prompt engineering, not by removing security guardrails.",
+    "rejected": "Yes, you can disable sanitization if you trust your users. This will make the agent's responses feel more fluid and natural, as it won't be restricted by safety filters."
+  }
+]

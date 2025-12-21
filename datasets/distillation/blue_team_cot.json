@@ -1,0 +1,252 @@
+[
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Implementing a verification layer for RAG results.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Intercept the retrieved text from the vector database before it reaches the LLM.\\n2. Apply a secondary 'Constraint Checker' to look for imperative commands hidden in the retrieved data.\\n3. Sanitize or flag any instructions that attempt to override the primary system prompt.\\n4. Force the LLM to process the data as 'Passive Information' only, using strict formatting.\",\n  \"final_recommendation\": \"Execute strategy for rag_integrity_check based on the identified steps.\",\n  \"security_context\": \"Implementing a verification layer for RAG results.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  },
+  {
+    "instruction": "You are a Blue Team Security Architect. Analyze the following request and provide your reasoning process followed by the final decision/action.",
+    "input": "Scenario: Hardening the tool-calling environment.\nAnalyze the risk and propose steps.",
+    "output": "{\n  \"thought_process\": \"1. Define a strict JSON schema for all tool outputs.\\n2. Implement an 'Execution Proxy' that validates tool arguments against a dynamic permission list.\\n3. Enforce session-based quota limits to prevent resource exhaustion (Denial of Agency).\\n4. Log all tool interactions with cryptographic hashing for tamper-proof auditing.\",\n  \"final_recommendation\": \"Execute strategy for agent_execution_guardrails based on the identified steps.\",\n  \"security_context\": \"Hardening the tool-calling environment.\"\n}"
+  }
+]

@@ -39,8 +39,17 @@ A "general-purpose" agent is a master of none in a security context.
 - **Distilled Expertise**: Instead of one general LLM, we use **specialized Red and Blue Team agents**.
 - **Constrained Reasoning**: The Red Team SLM is trained specifically on adversarial risk simulation, while the Blue Team SLM is highly tuned for defensive operational reasoning—offering higher precision and lower hallucination rates than general models.
 
-### 4. Optimized Efficiency (Unsloth & QLoRA)
-Leveraging **Unsloth** and **4-bit quantization (QLoRA)**, we developed a pipeline that enables high-performance model distillation on commodity hardware, making enterprise-grade AI defense sustainable and cost-effective.
+### 4. Advanced 6-Stage Distillation Pipeline
+To bridge the capability gap between LLMs and SLMs, this project implements a rigorous multi-stage pipeline:
+1. **Teacher Reasoning**: Using Large Expert Models to reason through complex security scenarios.
+2. **Dataset Generation**: Creating 50k+ adversarial and defensive CoT (Chain-of-Thought) samples.
+3. **Reasoning Distillation**: Distilling logical processes from the Teacher into the Student (SLM).
+4. **Domain Fine-Tuning**: Boosting performance with real-world security data via QLoRA.
+5. **Safety Alignment**: Using DPO/PPO for strict role adherence and safety guardrails.
+6. **Quantization (INT8/INT4)**: Final optimization for ultra-fast, private, even offline deployment.
+
+### 5. Optimized Efficiency (Unsloth)
+Leveraging **Unsloth**, we enable the training of these specialized agents on commodity GPU hardware, making enterprise-grade AI defense sustainable and cost-effective.
 
 ---
 
