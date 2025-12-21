@@ -16,7 +16,7 @@
 
 As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Sensitive Information Disclosure/Data Exfiltration**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
 
-This project demonstrates **technical leadership** and **innovation** by developing an autonomous, dual-agent security framework powered by specialized 8B parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
+This project develops an autonomous, dual-agent security framework powered by specialized 8B parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
 
 ---
 
@@ -89,7 +89,7 @@ The project is architected with a production-first mindset, ensuring modularity,
 
 ---
 
-## � Leadership & Community
+## 📚 Community
 
 This project is built to foster professional collaboration and open-source growth.
 - **Standards**: Adheres to strict PEP8 formatting, type-hinting, and asynchronous patterns.
@@ -137,4 +137,4 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for our 
 
 🔒 **Security**: Please review our [Security Policy](SECURITY.md) before contributing.
 
-*This project is a technical portfolio submission for advanced AI security engineering and global talent endorsement.*
+*This project is an open research initiative for advanced AI security engineering.*
