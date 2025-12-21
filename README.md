@@ -20,18 +20,27 @@ This project develops an autonomous, dual-agent security framework powered by sp
 
 ---
 
-## 💡 Innovation: Why This Matters
+## 💡 Strategic Advantages: Why Specialized SLMs?
 
-### 1. SLM vs. LLM Strategy
-Generic LLMs (GPT-4, Claude) are too slow (~2s latency) and expensive for real-time traffic filtering. By fine-tuning a **Llama-3 8B** model specifically for security, we achieved **sub-100ms inference** (a 20x improvement) with **96% detection accuracy** for jailbreaks, outperforming base models by 25%.
+Generic LLMs are often unsuitable for high-security agentic systems due to latency, cost, and privacy concerns. This project leverages **Small Language Models (SLMs)** to provide a superior security alternative.
 
-### 2. Autonomous Agentic Reasoning (LangGraph)
-Traditional WAFs (Web Application Firewalls) use regex-based rules which fail against semantic attacks. This system utilizes **LangGraph** to implement a stateful "think-before-act" loop:
-- **Red Agent**: Continuously probes the system to find novel edge-case vulnerabilities.
-- **Blue Agent**: Reasons over the intent of the attack, not just the keywords, and autonomously invokes security tools (firewall updates, IP blocking) to mitigate threats.
+### 1. Data Sovereignty & Absolute Privacy
+Security logs and system architectures are among an organization's most sensitive assets.
+- **On-Site Execution**: These SLMs run directly on-premise or within a **Private Cloud**.
+- **Zero Data Leakage**: No sensitive data is ever sent to external third-party API providers, ensuring full compliance with strict data residency and privacy regulations.
 
-### 3. Optimized Fine-Tuning with Unsloth & QLoRA
-Leveraging **Unsloth** and **4-bit quantization (QLoRA)**, we developed a pipeline that allows high-performance model distillation on commodity hardware, democratizing advanced AI security for smaller organizations.
+### 2. Real-Time Offline Resilience
+Autonomous agents must respond to threats at machine speed, regardless of network/Appliaction conditions.
+- **Edge Security**: By running locally, the system can handle security incidents in **real-time with sub-100ms latency**.
+- **Offline Capability**: The agents remain fully functional even in **disconnected or air-gapped environments**, providing continuous protection without internet dependency.
+
+### 3. Deep Specialization vs. General Knowledge
+A "general-purpose" agent is a master of none in a security context.
+- **Distilled Expertise**: Instead of one general LLM, we use **specialized Red and Blue Team agents**.
+- **Constrained Reasoning**: The Red Team SLM is trained specifically on adversarial risk simulation, while the Blue Team SLM is highly tuned for defensive operational reasoning—offering higher precision and lower hallucination rates than general models.
+
+### 4. Optimized Efficiency (Unsloth & QLoRA)
+Leveraging **Unsloth** and **4-bit quantization (QLoRA)**, we developed a pipeline that enables high-performance model distillation on commodity hardware, making enterprise-grade AI defense sustainable and cost-effective.
 
 ---
 
