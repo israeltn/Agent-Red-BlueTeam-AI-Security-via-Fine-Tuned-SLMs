@@ -1,33 +1,32 @@
-# Case Study: Autonomous Red/BlueTeam AI Security via Fine-Tuned SLMs
+# Case Study: Autonomous Red/Blue Team AI Security via Fine-Tuned SLMs
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/)
 
-## 🚀 Executive Summary: The AI Security Crisis
+## 🚀The AI Security Crisis
 
 As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
 
-This project demonstrates **technical leadership** and **innovation** by developing an autonomous, dual-agent security framework powered by specialised 8B parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
 
 ---
 
-## 💡 Innovation: Why This Matters
+## 💡 Innovation:
 
 ### 1. SLM vs. LLM Strategy
-Generic LLMs (GPT-4, Claude) are too slow (~2s latency) and expensive for real-time traffic filtering. By fine-tuning a **Llama-3 8B** model specifically for security, we achieved **sub-100ms inference** (a 20x improvement) with **96% detection accuracy** for jailbreaks, outperforming base models by 25%.
+Generic LLMs (GPT-4, Claude) are too slow (~2s latency) and expensive for real-time traffic filtering. By fine-tuning a foundation model specifically for security, we  are looking at achieving **sub-100ms inference** (a 20x improvement) with **96% detection accuracy** for jailbreaks, outperforming base models by 25%.
 
 ### 2. Autonomous Agentic Reasoning (LangGraph)
-Traditional WAFs (Web Application Firewalls) use regex-based rules, which fail against semantic attacks. This system utilizes **LangGraph** to implement a stateful "think-before-act" loop:
+Traditional WAFs (Web Application Firewalls) use regex-based rules, which fail against semantic attacks. This system  will utilizes **LangGraph** to implement a stateful "think-before-act" loop:
 - **Red Agent**: Continuously probes the system to find novel edge-case vulnerabilities.
 - **Blue Agent**: Reasons over the intent of the attack, not just the keywords, and autonomously invokes security tools (firewall updates, IP blocking) to mitigate threats.
 
 ### 3. Optimised Fine-Tuning with Unsloth & QLoRA
-Leveraging **Unsloth** and **4-bit quantisation (QLoRA)**, we developed a pipeline that allows high-performance model distillation on commodity hardware, democratising advanced AI security for smaller organisations.
+Leveraging **Unsloth** and **4-bit quantisation (QLoRA)**, we will be developing a pipeline that allows high-performance model distillation on commodity hardware, democratising advanced AI security for smaller organisations.
 
 ---
 
-## 🏗️ Technical Architecture & Leadership
+## 🏗️ Technical Architecture
 
 The project is architected with a production-first mindset, ensuring modularity, scalability, and rigorous testing.
 
@@ -81,7 +80,6 @@ The project is architected with a production-first mindset, ensuring modularity,
 
 ---
 
-## � Leadership & Community
 
 This project is built to foster professional collaboration and open-source growth.
 - **Standards**: Adheres to strict PEP8 formatting, type-hinting, and asynchronous patterns.
@@ -113,7 +111,7 @@ docker-compose up --build
 
 - [x] **Phase 1**: Proof of Concept (Llama-3 8B + Unsloth).
 - [ ] **Phase 2**: Dataset expansion to 50k+ samples for robust Zero-Day detection.
-- [ ] **Phase 3**: Integration with Kubernetes for auto-scaling defense nodes.
+- [ ] **Phase 3**: Integration with Kubernetes for auto-scaling defence nodes.
 - [ ] **Phase 4**: Real-world Red Team benchmarking vs Giskard and PyRIT.
 
 ---
@@ -126,4 +124,3 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for our 
 
 🔒 **Security**: Please review our [Security Policy](SECURITY.md) before contributing.
 
-*This project is a technical portfolio submission for advanced AI security engineering and global talent endorsement.*
