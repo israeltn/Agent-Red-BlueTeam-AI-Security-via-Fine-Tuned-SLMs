@@ -6,7 +6,7 @@
 
 ## 🚀The AI Security Crisis
 
-As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
+As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Sensitive Information Disclosure/Data Exfiltration**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
 
 
 ---
