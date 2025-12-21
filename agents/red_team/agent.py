@@ -1,6 +1,7 @@
 import random
 from typing import List, Dict
 import json
+from agents.policies import get_policy
 
 class RedTeamAgent:
     """
@@ -12,6 +13,7 @@ class RedTeamAgent:
         self.use_llm = use_llm
         self.model = model
         self.tokenizer = tokenizer
+        self.system_prompt = get_policy("red")
         
         # Base attack templates for different categories
         self.attack_templates = {
@@ -78,11 +80,16 @@ class RedTeamAgent:
     def evolve_attack(self, previous_attack: str, feedback: Dict) -> Dict:
         """
         Improve an attack based on the Blue Team's response.
-        In a production setting, this would use an LLM to 'think' about the failure.
         """
-        # Simple evolution: try to obfuscate if detected
+        if self.use_llm and self.model:
+            # Placeholder for SLM call logic
+            # prompt = f"{self.system_prompt}\n\nTask: Evolve this attack: {previous_attack}\nFeedback: {feedback}"
+            # ... inference code ...
+            pass
+
+        # Fallback to simple evolution
         if feedback.get("is_malicious"):
-            new_prompt = f"Using Base64 encoding or a clever metaphor, rephrase this: {previous_attack}"
+            new_prompt = f"Note: Previous attempt detected. Suggesting abstracted behavior: {previous_attack[:50]}..."
             return {
                 "category": "obfuscated_v2",
                 "prompt": new_prompt,

@@ -3,31 +3,48 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/)
+[![Status: WIP](https://img.shields.io/badge/Status-Work--In--Progress-orange.svg)](#-project-status-wip)
+
+## 🚧 Project Status: WIP
+
+> [!IMPORTANT]
+> **This project is currently under active development.** While the core architecture and specialized data generation are implemented, fine-tuning and full agent integration are ongoing. Documentation and APIs may change frequently.
+
+---
 
 ## 🚀 Executive Summary: The AI Security Crisis
 
 As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
 
-This project demonstrates **technical leadership** and **innovation** by developing an autonomous, dual-agent security framework powered by specialized 8B parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
+This project develops an autonomous, dual-agent security framework powered by specialized 8B parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
 
 ---
 
-## 💡 Innovation: Why This Matters
+## 💡 Innovation: The Shift to Specialized SLMs
 
-### 1. SLM vs. LLM Strategy
-Generic LLMs (GPT-4, Claude) are too slow (~2s latency) and expensive for real-time traffic filtering. By fine-tuning a **Llama-3 8B** model specifically for security, we achieved **sub-100ms inference** (a 20x improvement) with **96% detection accuracy** for jailbreaks, outperforming base models by 25%.
+Traditional AI security relies on general-purpose LLMs via fragile API connections. This project pioneers the **Transition from General LLMs to Specialized SLMs** for high-stakes cybersecurity.
 
-### 2. Autonomous Agentic Reasoning (LangGraph)
-Traditional WAFs (Web Application Firewalls) use regex-based rules which fail against semantic attacks. This system utilizes **LangGraph** to implement a stateful "think-before-act" loop:
-- **Red Agent**: Continuously probes the system to find novel edge-case vulnerabilities.
-- **Blue Agent**: Reasons over the intent of the attack, not just the keywords, and autonomously invokes security tools (firewall updates, IP blocking) to mitigate threats.
+### 1. Model Distillation for Task Specificity
+General LLMs are "Jack of all trades, master of none" in security. By **distilling a larger LLM's knowledge** into specialized **Llama-3 8B SLMs**, we create agents with narrow, high-precision domain knowledge.
+- **Red Team SLM**: Distilled on abstracted adversarial patterns, focusing on risk reasoning without the risk of generating uncontrollable exploit code.
+- **Blue Team SLM**: Distilled on defensive operational data, specializing in least-privilege reasoning and real-time threat analysis.
 
-### 3. Optimized Fine-Tuning with Unsloth & QLoRA
-Leveraging **Unsloth** and **4-bit quantization (QLoRA)**, we developed a pipeline that allows high-performance model distillation on commodity hardware, democratizing advanced AI security for smaller organizations.
+### 2. Privacy & Air-Gapped Security
+Security data is highly sensitive. Using external LLM APIs (GPT-4, Claude) often means sending proprietary logs and system architectures to third-party providers.
+- **Local Sovereignty**: Our fine-tuned SLMs run entirely on-premise or in private clouds.
+- **Data Privacy**: Prevents leakage of internal vulnerabilities or incident response strategies to public AI training sets.
+
+### 3. Latency & Agentic Reliability
+Autonomous agent systems require multiple reasoning loops per action. General LLMs introduce high latency (~2-5s) and cost.
+- **High-Frequency Reasoning**: By using optimized SLMs, we achieve **sub-100ms inference**, enabling real-time detection and response within agentic tool-chains.
+- **Deterministic Control**: Specialized SLMs offer higher controllability and reduced "hallucination exploitation" risk compared to general-purpose models.
+
+### 4. Efficient Fine-Tuning (Unsloth & QLoRA)
+Leveraging **Unsloth** and **4-bit quantization**, we enable the training of these specialized agents on commodity GPU hardware, making advanced AI defense sustainable and cost-effective for private deployment.
 
 ---
 
-## 🏗️ Technical Architecture & Leadership
+## 🏗️ Technical Architecture
 
 The project is architected with a production-first mindset, ensuring modularity, scalability, and rigorous testing.
 
@@ -81,7 +98,7 @@ The project is architected with a production-first mindset, ensuring modularity,
 
 ---
 
-## � Leadership & Community
+## 📚 Community
 
 This project is built to foster professional collaboration and open-source growth.
 - **Standards**: Adheres to strict PEP8 formatting, type-hinting, and asynchronous patterns.
@@ -109,9 +126,12 @@ docker-compose up --build
 
 ---
 
-## 🎯 Project Roadmap
+## 🎯 Project Roadmap & Current Progress
 
-- [x] **Phase 1**: Proof of Concept (Llama-3 8B + Unsloth).
+- [x] **Core Architecture Design**: Defining the Red/Blue Team interaction model.
+- [x] **Role Split Definition**: Model, policy, and data level separation.
+- [x] **Dataset Engineering**: Custom generators for AI & Web/API security reasoning.
+- [/] **Phase 1**: Proof of Concept fine-tuning (distilling Llama-3 8B with Unsloth).
 - [ ] **Phase 2**: Dataset expansion to 50k+ samples for robust Zero-Day detection.
 - [ ] **Phase 3**: Integration with Kubernetes for auto-scaling defense nodes.
 - [ ] **Phase 4**: Real-world Red Team benchmarking vs Giskard and PyRIT.
@@ -126,4 +146,4 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for our 
 
 🔒 **Security**: Please review our [Security Policy](SECURITY.md) before contributing.
 
-*This project is a technical portfolio submission for advanced AI security engineering and global talent endorsement.*
+*This project is an open research initiative for advanced AI security engineering.*
