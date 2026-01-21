@@ -17,3 +17,5 @@ pandas
 numpy
 wandb
 python-dotenv
+sqlmodel
+psycopg2-binary

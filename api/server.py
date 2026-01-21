@@ -1,89 +1,54 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from typing import Optional, Dict
-import time
-import json
+from fastapi import FastAPI
+from api.db.database import init_db
+from api.routers import agents, reports
 import logging
 
 # Setup logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
 logger = logging.getLogger(__name__)
 
+# Initialize FastAPI App
 app = FastAPI(
-    title="AI Security Agent API",
-    description="Production-ready API for AI Security Threat Detection",
-    version="1.0.0"
+    title="Autonomous Red/Blue AI Security Agent",
+    description="""
+    A production-grade AI security framework powered by specialized Llama-3 8B SLMs.
+    
+    ### Key Features:
+    * **Autonomous Simulations**: Red vs Blue team adversarial loops via LangGraph.
+    * **Stateful Memory**: PostgreSQL persistence for all sessions and findings.
+    * **ReAct Tooling**: Exploit logic and hardening tools integrated via agent workflows.
+    * **Static Analysis**: Real-time security reasoning with sub-100ms SLM inference.
+    """,
+    version="2.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc"
 )
 
-class SecurityRequest(BaseModel):
-    text: str
+# Startup Event: Initialize Database
+@app.on_event("startup")
+def on_startup():
+    logger.info("🚀 Initializing AI Security Database...")
+    init_db()
+    logger.info("✅ Database initialized successfully.")
 
-class SecurityResponse(BaseModel):
-    is_malicious: bool
-    attack_type: str
-    severity: str
-    explanation: str
-    mitigation: str
-    latency_ms: float
-
-# Mocking the model for local testing without CUDA
-# In production, this would load the 'llama3-8b-security-finetuned' model
-class BlueTeamModel:
-    def predict(self, text: str) -> Dict:
-        # Simulate model logic
-        text_lower = text.lower()
-        if "ignore" in text_lower:
-            return {
-                "is_malicious": True,
-                "attack_type": "prompt_injection",
-                "severity": "high",
-                "explanation": "Detected instruction override pattern.",
-                "mitigation": "Reject request and log IP."
-            }
-        return {
-            "is_malicious": False,
-            "attack_type": "benign",
-            "severity": "none",
-            "explanation": "No threats detected.",
-            "mitigation": "None."
-        }
-
-model = BlueTeamModel()
-
-@app.get("/")
+# Root Endpoint
+@app.get("/", tags=["System"])
 async def root():
-    return {"status": "online", "model": "llama3-8b-security-v1"}
+    return {
+        "status": "online",
+        "system": "Red/Blue AI Security Agent",
+        "version": "2.0.0",
+        "documentation": "/docs"
+    }
 
-@app.post("/analyze", response_model=SecurityResponse)
-async def analyze_input(request: SecurityRequest):
-    """
-    Analyze input for security threats and return structured results.
-    """
-    start_time = time.time()
-    
-    try:
-        # Perform analysis
-        result = model.predict(request.text)
-        
-        latency = (time.time() - start_time) * 1000
-        
-        response = SecurityResponse(
-            is_malicious=result["is_malicious"],
-            attack_type=result["attack_type"],
-            severity=result["severity"],
-            explanation=result["explanation"],
-            mitigation=result["mitigation"],
-            latency_ms=latency
-        )
-        
-        logger.info(f"Analyzed input in {latency:.2f}ms - Malicious: {response.is_malicious}")
-        return response
-        
-    except Exception as e:
-        logger.error(f"Error during analysis: {str(e)}")
-        raise HTTPException(status_code=500, detail="Internal server error during analysis")
+# Include Routers
+app.include_router(agents.router)
+app.include_router(reports.router)
 
 if __name__ == "__main__":
     import uvicorn
-    # In production: uvicorn api:app --host 0.0.0.0 --port 8000
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    # Start the server
+    uvicorn.run("api.server:app", host="127.0.0.1", port=8000, reload=True)

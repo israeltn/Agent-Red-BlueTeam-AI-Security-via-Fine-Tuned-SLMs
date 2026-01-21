@@ -21,7 +21,7 @@ import random
 MODEL_NAME = "unsloth/Meta-Llama-3.1-8B"
 MAX_SEQ_LENGTH = 2048
 OUTPUT_DIR = "outputs/red_team_slm"
-HF_MODEL_REPO = "your-username/red-team-risk-slm" # To be updated by user
+HF_MODEL_REPO = "israeltn/red-team-risk-slm" # Updated for user repo
 
 def load_red_team_data(file_path: str) -> Dataset:
     """Load and format the Red Team dataset."""
@@ -109,7 +109,20 @@ def train_red_team_slm():
     model.save_pretrained(OUTPUT_DIR)
     tokenizer.save_pretrained(OUTPUT_DIR)
     
-    print("✅ Red Team SLM Training Complete!")
+    # Push to Hugging Face
+    print(f"Pushing model to Hugging Face: {HF_MODEL_REPO}")
+    model.push_to_hub(
+        HF_MODEL_REPO,
+        token=os.getenv("HF_TOKEN"),
+        commit_message="Fine-tuned Red Team SLM for AI Security"
+    )
+    tokenizer.push_to_hub(
+        HF_MODEL_REPO,
+        token=os.getenv("HF_TOKEN"),
+        commit_message="Upload tokenizer"
+    )
+    
+    print("✅ Red Team SLM Training & Export Complete!")
 
 if __name__ == "__main__":
     if os.path.exists("d:/Global Talent/AI Security Agent/datasets/red_team_data.json"):

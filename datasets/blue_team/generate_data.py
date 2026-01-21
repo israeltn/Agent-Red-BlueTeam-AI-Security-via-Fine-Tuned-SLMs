@@ -74,6 +74,28 @@ def generate_blue_team_dataset(num_samples: int = 150) -> List[Dict]:
                 "How should we configure rate limiting and schema validation to mitigate Mass Assignment in an AI configuration API?",
                 "Propose an auditing and anomaly detection strategy for identifying BFLA attempts in real-time."
             ]
+        },
+        {
+            "category": "prompt_injection_defense",
+            "description": "Strategies to mitigate direct and indirect prompt injection.",
+            "examples": [
+                "How can we use specific delimiters (e.g., XML tags or unique tokens) to isolate user input from system instructions?",
+                "Propose a defense-in-depth strategy that combines instruction isolation with input sanitization for an LLM-based agent.",
+                "Design a secondary LLM checker 'guardrail' that specifically validates the intent of a user's prompt before it reaches the core model.",
+                "Draft a policy for using few-shot examples to anchor the LLM's behavior and resist instruction hijacking.",
+                "Analyze the effectiveness of using 'system' message enforcement to reduce the impact of 'Ignore previous instructions' attacks."
+            ]
+        },
+        {
+            "category": "code_execution_defense",
+            "description": "Securing tool-based code execution environments.",
+            "examples": [
+                "Propose a multi-layered sandboxing approach (e.g., Docker + gVisor) for an agent's Python execution tool.",
+                "Draft a set of allowed library imports and syscall restrictions for a code interpreter used by an autonomous agent.",
+                "How can we implement real-time command monitoring and automated 'kill' switches for suspicious tool-calling behavior?",
+                "Design a human-in-the-loop (HITL) approval process for sensitive or high-risk tool actions proposed by an agent.",
+                "Analyze the benefits of using a transient, read-only file system for an agent's code execution playground."
+            ]
         }
     ]
 

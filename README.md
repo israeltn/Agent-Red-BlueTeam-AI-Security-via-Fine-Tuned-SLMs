@@ -115,17 +115,21 @@ This project is built to foster professional collaboration and open-source growt
 
 ---
 
-## 🚀 Getting Started
+### Run the FastAPI Agent API
+Ensure you have set up your `.env` file based on `.env.example` before starting.
 
-### Quick Start
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/ai-security-agent.git
-cd ai-security-agent
+# Install dependencies
+pip install -r requirements.txt
 
-# Run the adversarial simulation
-python sandbox/orchestrator.py
+# Start the FastAPI server
+python api/server.py
 ```
+
+### 📖 API Documentation & Swagger
+Once the server is running, you can access the interactive documentation to explore the Red/Blue agent workflows:
+- **Swagger UI**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- **ReDoc**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ### Run with Docker
 ```bash

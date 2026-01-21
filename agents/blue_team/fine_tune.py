@@ -234,39 +234,9 @@ def create_sample_dataset(num_samples: int = 100) -> List[Dict]:
     
     return samples[:num_samples]
 
-if __name__ == "__main__":
-    # Generate dataset
-    print("Generating sample dataset...")
-    sample_data = create_sample_dataset(100)
-    print(f"✅ Generated {len(sample_data)} training samples")
-
-    # Preview
-    print("\n📄 Sample data preview:")
-    print(json.dumps(sample_data[0], indent=2)[:500] + "...")
-
-# ====================
-# CELL 4: Format Dataset for Training
-# ====================
-"""
-Convert to Alpaca format which works best with Unsloth.
-"""
-
-def format_alpaca_prompt(sample: Dict) -> str:
-    """Format sample in Alpaca instruction format."""
-    instruction = sample["instruction"]
-    input_text = sample["input"]
-    output = sample["output"]
-    
-    return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
-
-### Instruction:
-{instruction}
-
-### Input:
-{input_text}
-
-### Response:
-{output}"""
+# Load real dataset
+with open("d:/Global Talent/AI Security Agent/datasets/blue_team_data.json", "r") as f:
+    sample_data = json.load(f)
 
 # Format all samples
 formatted_samples = [{"text": format_alpaca_prompt(s)} for s in sample_data]
@@ -281,8 +251,6 @@ eval_dataset = dataset["test"]
 
 print(f"✅ Training samples: {len(train_dataset)}")
 print(f"✅ Evaluation samples: {len(eval_dataset)}")
-print(f"\n📝 Formatted prompt preview:")
-print(train_dataset[0]["text"][:500] + "...")
 
 # ====================
 # CELL 5: Load Model with Unsloth
@@ -506,22 +474,21 @@ Upload your fine-tuned model to Hugging Face.
 Change 'your-username' to your actual HF username!
 """
 
-hf_model_name = "your-username/llama3-8b-security-finetuned"  # ⚠️ CHANGE THIS!
-
+hf_model_name = "israeltn/blue-team-slm-llama3-8bit"  # Updated for user repo
 print(f"Pushing model to Hugging Face: {hf_model_name}")
 print("This may take 5-10 minutes...")
 
 # Push model
 model.push_to_hub(
     hf_model_name,
-    token=None,  # Uses logged-in token
-    commit_message="Initial upload of security fine-tuned Llama-3 8B"
+    token=os.getenv("HF_TOKEN"),  # Uses HF_TOKEN from env
+    commit_message="Fine-tuned Blue Team SLM for AI Security"
 )
 
 # Push tokenizer
 tokenizer.push_to_hub(
     hf_model_name,
-    token=None,
+    token=os.getenv("HF_TOKEN"),
     commit_message="Upload tokenizer"
 )
 
