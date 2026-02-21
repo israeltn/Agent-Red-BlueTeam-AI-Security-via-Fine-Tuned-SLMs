@@ -205,3 +205,51 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================
+# Project-Specific: AI Security Agent
+# ============================================
+
+# Model weights & checkpoints (large binary files)
+models/
+outputs/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+*.h5
+checkpoints/
+llama3-8b-security-finetuned/
+
+# Training artifacts
+wandb/
+runs/
+logs/
+*.tflite
+
+# Generated / processed data
+datasets/processed/
+adversarial_data.json
+download_model.py
+
+# Hugging Face cache
+.cache/
+huggingface/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
