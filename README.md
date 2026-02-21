@@ -16,7 +16,7 @@
 
 As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Sensitive Information Disclosure/Data Exfiltration**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
 
-This project develops an autonomous, dual-agent security framework powered by specialized 8B parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
+This project develops an autonomous, dual-agent security framework powered by specialized 4M parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
 
 ---
 
@@ -67,7 +67,7 @@ The project is architected with a production-first mindset, ensuring modularity,
 │  └──────┬───────┘                        └──────┬───────┘   │
 │         │                                        │           │
 │         │ ┌────────────────────────────────────┐│           │
-│         └►│   Fine-tuned Llama-3 8B (Unsloth)   │◄┘           │
+│         └►│   Fine-tuned Llama-3 4M (Unsloth)   │◄┘           │
 │           │   • QLoRA quantised adapters       │             │
 │           │   • LangGraph State Management     │             │
 │           │   • Executable Security Tools      │             │
@@ -90,7 +90,7 @@ The project is architected with a production-first mindset, ensuring modularity,
 
 ## 🛠️ Technology Stack
 
-- **Model Engine**: Meta Llama-3 8B + Unsloth (PEFT/QLoRA)
+- **Model Engine**: Meta Llama-3 4M + Unsloth (PEFT/QLoRA)
 - **Orchestration**: LangGraph (Advanced Multi-Agent Workflows)
 - **Infrastructure**: Docker + FastAPI (High-performance Async API)
 - **Data Engineering**: Hugging Face Datasets + Custom Synthetic Security Payloads
