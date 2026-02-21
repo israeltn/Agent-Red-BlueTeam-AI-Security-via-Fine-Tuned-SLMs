@@ -14,7 +14,7 @@
 
 ## 🚀The AI Security Crisis
 
-As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Sensitive Information Disclosure/Data Exfiltration**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to enterprise data.
+As Large Language Models (LLMs) transition from experimental chat interfaces to autonomous agents with system access, the attack surface has expanded exponentially. Vulnerabilities like **Direct & Indirect Prompt Injection**, **Sensitive Information Disclosure/Data Exfiltration**, **Jailbreaking**, and **Excessive Agency** now pose existential risks to PII and enterprise data.
 
 This project develops an autonomous, dual-agent security framework powered by specialized 4M parameter Small Language Models (SLMs). It solves the critical tradeoff between security contextual reasoning and real-time performance.
 
@@ -42,7 +42,7 @@ A "general-purpose" agent is a master of none in a security context.
 ### 4. Advanced 6-Stage Distillation Pipeline
 To bridge the capability gap between LLMs and SLMs, this project implements a rigorous multi-stage pipeline:
 1. **Teacher Reasoning**: Using Large Expert Models to reason through complex security scenarios.
-2. **Dataset Generation**: Creating 50k+ adversarial and defensive CoT (Chain-of-Thought) samples.
+2. **Dataset Generation**: Creating 20k+ adversarial and defensive CoT (Chain-of-Thought) samples.
 3. **Reasoning Distillation**: Distilling logical processes from the Teacher into the Student (SLM).
 4. **Domain Fine-Tuning**: Boosting performance with real-world security data via QLoRA.
 5. **Safety Alignment**: Using DPO/PPO for strict role adherence and safety guardrails.
@@ -67,7 +67,7 @@ The project is architected with a production-first mindset, ensuring modularity,
 │  └──────┬───────┘                        └──────┬───────┘   │
 │         │                                        │           │
 │         │ ┌────────────────────────────────────┐│           │
-│         └►│   Fine-tuned Llama-3 4M (Unsloth)   │◄┘           │
+│         └►│   Fine-tuned Llama-3 8B (Unsloth)   │◄┘           │
 │           │   • QLoRA quantised adapters       │             │
 │           │   • LangGraph State Management     │             │
 │           │   • Executable Security Tools      │             │
@@ -90,7 +90,7 @@ The project is architected with a production-first mindset, ensuring modularity,
 
 ## 🛠️ Technology Stack
 
-- **Model Engine**: Meta Llama-3 4M + Unsloth (PEFT/QLoRA)
+- **Model Engine**: Meta Llama-3 8B + Unsloth (PEFT/QLoRA)
 - **Orchestration**: LangGraph (Advanced Multi-Agent Workflows)
 - **Infrastructure**: Docker + FastAPI (High-performance Async API)
 - **Data Engineering**: Hugging Face Datasets + Custom Synthetic Security Payloads
